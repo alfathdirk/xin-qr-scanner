@@ -57,7 +57,7 @@
         <button (click)="$.scanner.start()">Start</button>
         <button (click)="$.scanner.stop()">Stop</button>
       </div>
-      <xin-qr-scanner id="scanner" value="{{qrData}}"></xin-qr-scanner>
+      <xin-qr-scanner id="scanner" value="{{qrData}}" (change)="handler(evt)"></xin-qr-scanner>
       <textarea cols="30" rows="10">[[qrData]]</textarea>
     </template>
   </x-pane>

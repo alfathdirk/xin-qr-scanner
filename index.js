@@ -75,6 +75,7 @@ class XinQrScanner extends Component {
           drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, '#FF3B58');
           if (code.data) {
             self.set('value',code.data);
+            self.fire('change', code.data);
           }
         }
       }

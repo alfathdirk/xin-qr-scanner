@@ -10,6 +10,11 @@ class XPane extends Component {
       },
     });
   }
+
+  handler (evt) {
+    alert(evt.detail);
+    evt.target.stop();
+  }
 }
 
 define('x-pane', XPane);
