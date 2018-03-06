@@ -1,0 +1,26 @@
+{
+  "name": "xin-qr-scanner",
+  "version": "1.0.0",
+  "description": "Xin QR Scanner ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server"
+  },
+  "author": "alfathdirk <alfathdirk@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@xinix/xin": "^2.4.8",
+    "babel-loader": "^7.1.4",
+    "css-loader": "^0.28.10",
+    "html-webpack-plugin": "^3.0.5",
+    "sprintf-js": "^1.1.1",
+    "style-loader": "^0.20.2",
+    "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "dependencies": {
+    "jsqr": "^1.0.4"
+  }
+}

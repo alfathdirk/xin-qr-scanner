@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, min-scale=1.0, max-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+      html, body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      x-pane {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      xin-qr-scanner {
+        flex: 1;
+        display: block;
+      }
+
+      xin-qr-scanner canvas {
+        width: 100%;
+      }
+
+      textarea {
+        height: 100px;
+        width: 100%;
+      }
+
+      .buttons {
+        display: flex;
+      }
+
+      .buttons button {
+        flex: 1;
+        font-size: 1.5rem;
+      }
+    </style>
+</head>
+<body>
+  <x-pane>
+    <template>
+      <div class="buttons">
+        <button (click)="$.scanner.start()">Start</button>
+        <button (click)="$.scanner.stop()">Stop</button>
+      </div>
+      <xin-qr-scanner id="scanner" value="{{qrData}}"></xin-qr-scanner>
+      <textarea cols="30" rows="10">[[qrData]]</textarea>
+    </template>
+  </x-pane>
+</body>
+</html>
